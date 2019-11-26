@@ -22,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -38,30 +39,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = {
-app,
-
-ipStackRequest: (ip) => (
-  new Promise((resolve, reject) => {
-
-    let url = http://api.ipstack.com/check?access_key=eeaac9cf0e060ccd2bbdc82c929d945c&fields=latitude,longitude';
-    request({
-      url: url,
-      method: "GET",
-      json: true
-    }, (error, response, body) => {
-
-      if(response.statusCode !== 200)
-        resolve('FAILED');
-
-      if(body.success === false) {
-        resolve('LIMIT_REACHED');
-      };
-      
-      if(typeof body.latitude && body.longitude !== 'undefined') {
-        resolve(body.latitude && body.longitude);
-      }
-      resolve('FAILED');
-    });
-  })
-)
+module.exports = app;
