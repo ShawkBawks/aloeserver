@@ -1,3 +1,4 @@
+  
 var express = require('express');
 var router = express.Router();
 const axios = require('axios');
@@ -9,7 +10,8 @@ console.log(key)
 
 router.get('/', function(req, res, next) {
 		axios.get(`http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`).then(function (response) {
-		console.log(response.data)
+	let data = { latitude: response.data.latitude, longitude: response.data.longitude }
+			res.send(data)
   res.render('index', { title: 'Express' })
 	})
 });
