@@ -12,15 +12,23 @@
 ~h
 # Command Line History (newest to oldest):
 :q
-|2,0,1574708036,,"q"
+|2,0,1575051762,,"q"
 :wq
-|2,0,1574639237,,"wq"
+|2,0,1574902042,,"wq"
+:wq!
+|2,0,1574889022,,"wq!"
 :q!
-|2,0,1574638220,,"q!"
+|2,0,1574823334,,"q!"
+:.!
+|2,0,1574823330,,".!"
+:!q
+|2,0,1574823324,,"!q"
+:%w !pbcopy
+|2,0,1574823272,,"%w !pbcopy"
+:w !pbcopy
+|2,0,1574823244,,"w !pbcopy"
 :!wq
 |2,0,1574638208,,"!wq"
-:wq!
-|2,0,1574638134,,"wq!"
 :qw
 |2,0,1574637788,,"qw"
 
@@ -33,239 +41,388 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+"0	CHAR	0
+	var express = require('express');
+	var router = express.Router();
+	const axios = require('axios');
+	require('dotenv').config();
+	const key = process.env.ACCESS_KEY;
+	axios.get(`http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`)
+	    .then function (response){
+	     axios({
+	          method: "post",
+	        url: "/api/user-sensors",
+	        data: {
+	         latitude: response.data.latitude,
+	         longitude: response.data.longitude
+	        }
+	      });
+	    };
+|3,0,0,0,16,0,1574823098,"var express = require('express');","var router = express.Router();","const axios = require('axios');","require('dotenv').config();","const key = process.env.ACCESS_KEY;","axios.get(`http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`)","    .then function (response){","     axios({","          method: \"post\",","        url: \"/api/user-sensors\",","        data: {","         latitude: response.data.latitude,",>45
+|<"         longitude: response.data.longitude","        }","      });","    };"
+""1	LINE	0
+					latitude: response.data.latitude,
+|3,1,1,1,1,0,1574888864,"				latitude: response.data.latitude,"
+"2	LINE	0
+					longitude: response.data.longitude
+|3,0,2,1,1,0,1574888862,"				longitude: response.data.longitude"
+"3	CHAR	0
+	var express = require('express');
+	var router = express.Router();
+	const axios = require('axios');
+	require('dotenv').config();
+	const key = process.env.ACCESS_KEY;
+	axios.get(`http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`)
+	    .then function (response){
+	     axios({
+	          method: "post",
+	        url: "/api/user-sensors",
+	        data: {
+	         latitude: response.data.latitude,
+	         longitude: response.data.longitude
+	        }
+	      });
+	    };
+|3,0,3,0,16,0,1574822966,"var express = require('express');","var router = express.Router();","const axios = require('axios');","require('dotenv').config();","const key = process.env.ACCESS_KEY;","axios.get(`http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`)","    .then function (response){","     axios({","          method: \"post\",","        url: \"/api/user-sensors\",","        data: {","         latitude: response.data.latitude,",>45
+|<"         longitude: response.data.longitude","        }","      });","    };"
+"-	CHAR	0
+	;
+	
+|3,0,36,0,2,0,1574822412,";",""
 
 # File marks:
-'0  16  22  ~/aloe/app.js
-|4,48,16,22,1574708036,"~/aloe/app.js"
-'1  1  0  ~/aloe/views/layout.jade
-|4,49,1,0,1574707413,"~/aloe/views/layout.jade"
-'2  5  14  ~/aloe/views/index.jade
-|4,50,5,14,1574706942,"~/aloe/views/index.jade"
-'3  8  0  ~/aloe/public/stylesheets/style.css
-|4,51,8,0,1574706893,"~/aloe/public/stylesheets/style.css"
-'4  1  0  ~/aloe/routes/users.js
-|4,52,1,0,1574706865,"~/aloe/routes/users.js"
-'5  9  0  ~/aloe/routes/index.js
-|4,53,9,0,1574706853,"~/aloe/routes/index.js"
-'6  16  0  ~/aloe/package.json
-|4,54,16,0,1574639241,"~/aloe/package.json"
-'7  14  20  ~/aloe/app.js
-|4,55,14,20,1574638241,"~/aloe/app.js"
-'8  14  20  ~/aloe/app.js
-|4,56,14,20,1574638241,"~/aloe/app.js"
-'9  14  20  ~/aloe/app.js
-|4,57,14,20,1574638220,"~/aloe/app.js"
+'0  1  0  ~/README.md
+|4,48,1,0,1575051762,"~/README.md"
+'1  2  29  ~/aloe/sensorControl.js
+|4,49,2,29,1574902054,"~/aloe/sensorControl.js"
+'2  29  0  ~/.profile
+|4,50,29,0,1574899604,"~/.profile"
+'3  1  0  ~/aloe/.env
+|4,51,1,0,1574891102,"~/aloe/.env"
+'4  26  0  ~/aloe/package-lock.json
+|4,52,26,0,1574889443,"~/aloe/package-lock.json"
+'5  15  2  ~/aloe/scripts/post_location.js
+|4,53,15,2,1574889030,"~/aloe/scripts/post_location.js"
+'6  14  0  ~/aloe/scripts/post_location.js
+|4,54,14,0,1574888211,"~/aloe/scripts/post_location.js"
+'7  13  0  ~/aloe/scripts/post_location.js
+|4,55,13,0,1574888211,"~/aloe/scripts/post_location.js"
+'8  1  0  ~/aloe/scripts/:vert
+|4,56,1,0,1574887974,"~/aloe/scripts/:vert"
+'9  16  5  ~/aloe/scripts/post_location.js
+|4,57,16,5,1574823334,"~/aloe/scripts/post_location.js"
 
 # Jumplist (newest first):
--'  16  22  ~/aloe/app.js
-|4,39,16,22,1574708036,"~/aloe/app.js"
--'  14  20  ~/aloe/app.js
-|4,39,14,20,1574707438,"~/aloe/app.js"
--'  1  0  ~/aloe/views/layout.jade
-|4,39,1,0,1574707413,"~/aloe/views/layout.jade"
--'  1  0  ~/aloe/views/layout.jade
-|4,39,1,0,1574707413,"~/aloe/views/layout.jade"
--'  5  14  ~/aloe/views/index.jade
-|4,39,5,14,1574706942,"~/aloe/views/index.jade"
--'  5  14  ~/aloe/views/index.jade
-|4,39,5,14,1574706942,"~/aloe/views/index.jade"
--'  5  14  ~/aloe/views/index.jade
-|4,39,5,14,1574706942,"~/aloe/views/index.jade"
--'  5  14  ~/aloe/views/index.jade
-|4,39,5,14,1574706942,"~/aloe/views/index.jade"
--'  1  0  ~/aloe/views/index.jade
-|4,39,1,0,1574706927,"~/aloe/views/index.jade"
--'  1  0  ~/aloe/views/index.jade
-|4,39,1,0,1574706927,"~/aloe/views/index.jade"
--'  1  0  ~/aloe/views/index.jade
-|4,39,1,0,1574706927,"~/aloe/views/index.jade"
--'  1  0  ~/aloe/views/index.jade
-|4,39,1,0,1574706927,"~/aloe/views/index.jade"
--'  8  0  ~/aloe/public/stylesheets/style.css
-|4,39,8,0,1574706893,"~/aloe/public/stylesheets/style.css"
--'  8  0  ~/aloe/public/stylesheets/style.css
-|4,39,8,0,1574706893,"~/aloe/public/stylesheets/style.css"
--'  8  0  ~/aloe/public/stylesheets/style.css
-|4,39,8,0,1574706893,"~/aloe/public/stylesheets/style.css"
--'  8  0  ~/aloe/public/stylesheets/style.css
-|4,39,8,0,1574706893,"~/aloe/public/stylesheets/style.css"
--'  8  0  ~/aloe/public/stylesheets/style.css
-|4,39,8,0,1574706893,"~/aloe/public/stylesheets/style.css"
--'  8  0  ~/aloe/public/stylesheets/style.css
-|4,39,8,0,1574706893,"~/aloe/public/stylesheets/style.css"
--'  8  0  ~/aloe/public/stylesheets/style.css
-|4,39,8,0,1574706893,"~/aloe/public/stylesheets/style.css"
--'  8  0  ~/aloe/public/stylesheets/style.css
-|4,39,8,0,1574706893,"~/aloe/public/stylesheets/style.css"
--'  1  0  ~/aloe/public/stylesheets/style.css
-|4,39,1,0,1574706885,"~/aloe/public/stylesheets/style.css"
--'  1  0  ~/aloe/public/stylesheets/style.css
-|4,39,1,0,1574706885,"~/aloe/public/stylesheets/style.css"
--'  1  0  ~/aloe/public/stylesheets/style.css
-|4,39,1,0,1574706885,"~/aloe/public/stylesheets/style.css"
--'  1  0  ~/aloe/public/stylesheets/style.css
-|4,39,1,0,1574706885,"~/aloe/public/stylesheets/style.css"
--'  1  0  ~/aloe/public/stylesheets/style.css
-|4,39,1,0,1574706885,"~/aloe/public/stylesheets/style.css"
--'  1  0  ~/aloe/public/stylesheets/style.css
-|4,39,1,0,1574706885,"~/aloe/public/stylesheets/style.css"
--'  1  0  ~/aloe/public/stylesheets/style.css
-|4,39,1,0,1574706885,"~/aloe/public/stylesheets/style.css"
--'  1  0  ~/aloe/public/stylesheets/style.css
-|4,39,1,0,1574706885,"~/aloe/public/stylesheets/style.css"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  1  0  ~/aloe/routes/users.js
-|4,39,1,0,1574706865,"~/aloe/routes/users.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  9  0  ~/aloe/routes/index.js
-|4,39,9,0,1574706853,"~/aloe/routes/index.js"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
--'  16  0  ~/aloe/package.json
-|4,39,16,0,1574639241,"~/aloe/package.json"
+-'  1  0  ~/README.md
+|4,39,1,0,1575051762,"~/README.md"
+-'  2  29  ~/aloe/sensorControl.js
+|4,39,2,29,1574902054,"~/aloe/sensorControl.js"
+-'  2  29  ~/aloe/sensorControl.js
+|4,39,2,29,1574902054,"~/aloe/sensorControl.js"
+-'  1  0  ~/aloe/sensorControl.js
+|4,39,1,0,1574902033,"~/aloe/sensorControl.js"
+-'  1  0  ~/aloe/sensorControl.js
+|4,39,1,0,1574902033,"~/aloe/sensorControl.js"
+-'  29  0  ~/.profile
+|4,39,29,0,1574899604,"~/.profile"
+-'  29  0  ~/.profile
+|4,39,29,0,1574899604,"~/.profile"
+-'  29  0  ~/.profile
+|4,39,29,0,1574899604,"~/.profile"
+-'  29  0  ~/.profile
+|4,39,29,0,1574899604,"~/.profile"
+-'  1  0  ~/.profile
+|4,39,1,0,1574899550,"~/.profile"
+-'  1  0  ~/.profile
+|4,39,1,0,1574899550,"~/.profile"
+-'  1  0  ~/.profile
+|4,39,1,0,1574899550,"~/.profile"
+-'  1  0  ~/.profile
+|4,39,1,0,1574899550,"~/.profile"
+-'  1  0  ~/aloe/.env
+|4,39,1,0,1574891102,"~/aloe/.env"
+-'  1  0  ~/aloe/.env
+|4,39,1,0,1574891102,"~/aloe/.env"
+-'  1  0  ~/aloe/.env
+|4,39,1,0,1574891102,"~/aloe/.env"
+-'  1  0  ~/aloe/.env
+|4,39,1,0,1574891102,"~/aloe/.env"
+-'  1  0  ~/aloe/.env
+|4,39,1,0,1574891102,"~/aloe/.env"
+-'  1  0  ~/aloe/.env
+|4,39,1,0,1574891102,"~/aloe/.env"
+-'  1  0  ~/aloe/.env
+|4,39,1,0,1574891102,"~/aloe/.env"
+-'  1  0  ~/aloe/.env
+|4,39,1,0,1574891102,"~/aloe/.env"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  26  0  ~/aloe/package-lock.json
+|4,39,26,0,1574889443,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  1  0  ~/aloe/package-lock.json
+|4,39,1,0,1574889402,"~/aloe/package-lock.json"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  15  2  ~/aloe/scripts/post_location.js
+|4,39,15,2,1574889030,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
+-'  1  0  ~/aloe/scripts/post_location.js
+|4,39,1,0,1574888821,"~/aloe/scripts/post_location.js"
 
 # History of marks within files (newest to oldest):
 
+> ~/README.md
+	*	1575051759	0
+	"	1	0
+
+> ~/aloe/sensorControl.js
+	*	1574902041	0
+	"	2	29
+	^	2	30
+	.	2	29
+	+	2	29
+
+> ~/.profile
+	*	1574899600	0
+	"	29	0
+	^	29	0
+	.	28	35
+	+	28	35
+
+> ~/aloe/.env
+	*	1574891095	0
+	"	1	0
+
+> ~/aloe/package-lock.json
+	*	1574889442	0
+	"	26	0
+
+> ~/aloe/scripts/post_location.js
+	*	1574889027	0
+	"	15	2
+	^	13	60
+	.	13	59
+	+	1	46
+	+	1	47
+	+	1	33
+	+	1	6
+	+	1	31
+	+	1	26
+	+	1	25
+	+	1	4
+	+	1	3
+	+	1	7
+	+	1	42
+	+	1	67
+	+	1	89
+	+	1	39
+	+	1	7
+	+	1	5
+	+	1	29
+	+	1	40
+	+	1	27
+	+	1	42
+	+	1	5
+	+	1	30
+	+	1	6
+	+	1	0
+	+	17	0
+	+	16	6
+	+	10	16
+	+	14	0
+	+	12	63
+	+	13	59
+
+> ~/aloe/scripts/:vert
+	*	1574887971	0
+	"	1	0
+
+> ~/aloe/routes/index.js
+	*	1574823124	0
+	"	19	22
+	^	19	23
+	.	19	23
+	+	17	0
+	+	19	24
+	+	21	0
+	+	19	24
+	+	19	23
+
 > ~/aloe/app.js
-	*	1574708035	0
-	"	16	22
+	*	1574821120	0
+	"	1	0
 	^	14	24
 	.	14	24
 	+	14	24
+
+> /tmp/crontab.iIBHkh/crontab
+	*	1574820411	0
+	"	20	1
+
+> /tmp/crontab.QXFylh/crontab
+	*	1574820385	0
+	"	1	0
+
+> ~/vim_strace
+	*	1574729135	0
+	"	48	0
+
+> ~/.vimrc
+	*	1574728912	0
+	"	126	0
+
+> ~/.viminfo
+	*	1574728706	0
+	"	32	0
+
+> ~/aloe/node_modules/dotenv/config.js
+	*	1574727966	0
+	"	1	0
 
 > ~/aloe/views/layout.jade
 	*	1574707411	0
@@ -284,14 +441,6 @@
 	*	1574706858	0
 	"	1	0
 
-> ~/aloe/routes/index.js
-	*	1574706842	0
-	"	9	0
-
 > ~/aloe/package.json
 	*	1574639237	0
 	"	16	0
-
-> ~/aloe/package-lock.json
-	*	1574637918	0
-	"	723	0

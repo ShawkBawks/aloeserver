@@ -854,3 +854,349 @@
 2019-11-25T18:53:43: PM2 log: Stopping app:app id:0
 2019-11-25T18:53:44: PM2 log: App [app:0] exited with code [0] via signal [SIGINT]
 2019-11-25T18:53:44: PM2 log: pid=3612 msg=process killed
+2019-11-26T03:57:26: PM2 log: PM2 successfully stopped
+2019-11-26T03:58:12: PM2 log: ===============================================================================
+2019-11-26T03:58:12: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-26T03:58:12: PM2 log: Time                 : Tue Nov 26 2019 03:58:12 GMT+0000 (Greenwich Mean Time)
+2019-11-26T03:58:12: PM2 log: PM2 version          : 4.1.2
+2019-11-26T03:58:12: PM2 log: Node.js version      : 11.15.0
+2019-11-26T03:58:12: PM2 log: Current arch         : arm
+2019-11-26T03:58:12: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-26T03:58:12: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-26T03:58:12: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-26T03:58:12: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-26T03:58:12: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-26T03:58:12: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-26T03:58:12: PM2 log: Concurrent actions   : 2
+2019-11-26T03:58:12: PM2 log: SIGTERM timeout      : 1600
+2019-11-26T03:58:12: PM2 log: ===============================================================================
+2019-11-26T03:58:13: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-26T03:58:13: PM2 log: App [hello:0] online
+2019-11-26T04:02:52: PM2 log: ===============================================================================
+2019-11-26T04:02:52: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-26T04:02:52: PM2 log: Time                 : Tue Nov 26 2019 04:02:52 GMT+0000 (Greenwich Mean Time)
+2019-11-26T04:02:52: PM2 log: PM2 version          : 4.1.2
+2019-11-26T04:02:52: PM2 log: Node.js version      : 11.15.0
+2019-11-26T04:02:52: PM2 log: Current arch         : arm
+2019-11-26T04:02:52: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-26T04:02:52: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-26T04:02:52: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-26T04:02:52: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-26T04:02:52: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-26T04:02:52: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-26T04:02:52: PM2 log: Concurrent actions   : 2
+2019-11-26T04:02:52: PM2 log: SIGTERM timeout      : 1600
+2019-11-26T04:02:52: PM2 log: ===============================================================================
+2019-11-26T04:02:53: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-26T04:02:53: PM2 log: App [hello:0] online
+2019-11-26T04:06:38: PM2 log: ===============================================================================
+2019-11-26T04:06:39: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-26T04:06:39: PM2 log: Time                 : Tue Nov 26 2019 04:06:39 GMT+0000 (Greenwich Mean Time)
+2019-11-26T04:06:39: PM2 log: PM2 version          : 4.1.2
+2019-11-26T04:06:39: PM2 log: Node.js version      : 11.15.0
+2019-11-26T04:06:39: PM2 log: Current arch         : arm
+2019-11-26T04:06:39: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-26T04:06:39: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-26T04:06:39: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-26T04:06:39: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-26T04:06:39: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-26T04:06:39: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-26T04:06:39: PM2 log: Concurrent actions   : 2
+2019-11-26T04:06:39: PM2 log: SIGTERM timeout      : 1600
+2019-11-26T04:06:39: PM2 log: ===============================================================================
+2019-11-26T04:06:39: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-26T04:06:39: PM2 log: App [hello:0] online
+2019-11-27T03:04:28: PM2 log: Stopping app:hello id:0
+2019-11-27T03:04:28: PM2 log: App [hello:0] exited with code [0] via signal [SIGINT]
+2019-11-27T03:04:29: PM2 log: pid=427 msg=process killed
+2019-11-27T03:04:29: PM2 log: PM2 successfully stopped
+2019-11-27T03:05:13: PM2 log: ===============================================================================
+2019-11-27T03:05:13: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-27T03:05:13: PM2 log: Time                 : Wed Nov 27 2019 03:05:13 GMT+0000 (Greenwich Mean Time)
+2019-11-27T03:05:13: PM2 log: PM2 version          : 4.1.2
+2019-11-27T03:05:13: PM2 log: Node.js version      : 11.15.0
+2019-11-27T03:05:13: PM2 log: Current arch         : arm
+2019-11-27T03:05:13: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-27T03:05:13: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-27T03:05:13: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-27T03:05:13: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-27T03:05:13: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-27T03:05:13: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-27T03:05:13: PM2 log: Concurrent actions   : 2
+2019-11-27T03:05:13: PM2 log: SIGTERM timeout      : 1600
+2019-11-27T03:05:13: PM2 log: ===============================================================================
+2019-11-27T03:05:14: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-27T03:05:14: PM2 log: App [hello:0] online
+2019-11-27T03:13:55: PM2 log: Stopping app:hello id:0
+2019-11-27T03:13:55: PM2 log: App [hello:0] exited with code [0] via signal [SIGINT]
+2019-11-27T03:13:55: PM2 log: pid=436 msg=process killed
+2019-11-27T03:13:55: PM2 log: PM2 successfully stopped
+2019-11-27T03:15:03: PM2 log: ===============================================================================
+2019-11-27T03:15:03: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-27T03:15:03: PM2 log: Time                 : Wed Nov 27 2019 03:15:03 GMT+0000 (Greenwich Mean Time)
+2019-11-27T03:15:03: PM2 log: PM2 version          : 4.1.2
+2019-11-27T03:15:03: PM2 log: Node.js version      : 11.15.0
+2019-11-27T03:15:03: PM2 log: Current arch         : arm
+2019-11-27T03:15:03: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-27T03:15:03: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-27T03:15:03: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-27T03:15:03: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-27T03:15:03: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-27T03:15:03: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-27T03:15:03: PM2 log: Concurrent actions   : 2
+2019-11-27T03:15:03: PM2 log: SIGTERM timeout      : 1600
+2019-11-27T03:15:03: PM2 log: ===============================================================================
+2019-11-27T03:15:03: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-27T03:15:04: PM2 log: App [hello:0] online
+2019-11-27T06:17:43: PM2 log: ===============================================================================
+2019-11-27T06:17:43: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-27T06:17:43: PM2 log: Time                 : Wed Nov 27 2019 06:17:43 GMT+0000 (Greenwich Mean Time)
+2019-11-27T06:17:43: PM2 log: PM2 version          : 4.1.2
+2019-11-27T06:17:43: PM2 log: Node.js version      : 11.15.0
+2019-11-27T06:17:43: PM2 log: Current arch         : arm
+2019-11-27T06:17:43: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-27T06:17:43: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-27T06:17:43: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-27T06:17:43: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-27T06:17:43: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-27T06:17:43: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-27T06:17:43: PM2 log: Concurrent actions   : 2
+2019-11-27T06:17:43: PM2 log: SIGTERM timeout      : 1600
+2019-11-27T06:17:43: PM2 log: ===============================================================================
+2019-11-27T06:17:43: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-27T06:17:44: PM2 log: App [hello:0] online
+2019-11-27T19:08:31: PM2 log: ===============================================================================
+2019-11-27T19:08:31: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-27T19:08:32: PM2 log: Time                 : Wed Nov 27 2019 19:08:31 GMT+0000 (Greenwich Mean Time)
+2019-11-27T19:08:32: PM2 log: PM2 version          : 4.1.2
+2019-11-27T19:08:32: PM2 log: Node.js version      : 11.15.0
+2019-11-27T19:08:32: PM2 log: Current arch         : arm
+2019-11-27T19:08:32: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-27T19:08:32: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-27T19:08:32: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-27T19:08:32: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-27T19:08:32: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-27T19:08:32: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-27T19:08:32: PM2 log: Concurrent actions   : 2
+2019-11-27T19:08:32: PM2 log: SIGTERM timeout      : 1600
+2019-11-27T19:08:32: PM2 log: ===============================================================================
+2019-11-27T19:14:17: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-27T19:14:18: PM2 log: App [hello:0] online
+2019-11-27T19:22:45: PM2 log: ===============================================================================
+2019-11-27T19:22:45: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-27T19:22:45: PM2 log: Time                 : Wed Nov 27 2019 19:22:45 GMT+0000 (Greenwich Mean Time)
+2019-11-27T19:22:45: PM2 log: PM2 version          : 4.1.2
+2019-11-27T19:22:45: PM2 log: Node.js version      : 11.15.0
+2019-11-27T19:22:45: PM2 log: Current arch         : arm
+2019-11-27T19:22:45: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-27T19:22:45: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-27T19:22:45: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-27T19:22:45: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-27T19:22:45: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-27T19:22:45: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-27T19:22:45: PM2 log: Concurrent actions   : 2
+2019-11-27T19:22:45: PM2 log: SIGTERM timeout      : 1600
+2019-11-27T19:22:45: PM2 log: ===============================================================================
+2019-11-27T19:22:46: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-27T19:22:46: PM2 log: App [hello:0] online
+2019-11-27T20:42:08: PM2 log: ===============================================================================
+2019-11-27T20:42:08: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-27T20:42:08: PM2 log: Time                 : Wed Nov 27 2019 20:42:08 GMT+0000 (Greenwich Mean Time)
+2019-11-27T20:42:08: PM2 log: PM2 version          : 4.1.2
+2019-11-27T20:42:08: PM2 log: Node.js version      : 11.15.0
+2019-11-27T20:42:08: PM2 log: Current arch         : arm
+2019-11-27T20:42:08: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-27T20:42:08: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-27T20:42:08: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-27T20:42:08: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-27T20:42:08: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-27T20:42:08: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-27T20:42:08: PM2 log: Concurrent actions   : 2
+2019-11-27T20:42:08: PM2 log: SIGTERM timeout      : 1600
+2019-11-27T20:42:08: PM2 log: ===============================================================================
+2019-11-27T20:42:09: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-27T20:42:09: PM2 log: App [hello:0] online
+2019-11-27T22:53:46: PM2 log: ===============================================================================
+2019-11-27T22:53:46: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-27T22:53:46: PM2 log: Time                 : Wed Nov 27 2019 22:53:46 GMT+0000 (Greenwich Mean Time)
+2019-11-27T22:53:46: PM2 log: PM2 version          : 4.1.2
+2019-11-27T22:53:46: PM2 log: Node.js version      : 11.15.0
+2019-11-27T22:53:46: PM2 log: Current arch         : arm
+2019-11-27T22:53:46: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-27T22:53:46: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-27T22:53:46: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-27T22:53:46: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-27T22:53:46: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-27T22:53:46: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-27T22:53:46: PM2 log: Concurrent actions   : 2
+2019-11-27T22:53:46: PM2 log: SIGTERM timeout      : 1600
+2019-11-27T22:53:46: PM2 log: ===============================================================================
+2019-11-27T22:53:47: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-27T22:53:48: PM2 log: App [hello:0] online
+2019-11-27T23:29:25: PM2 log: ===============================================================================
+2019-11-27T23:29:25: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-27T23:29:25: PM2 log: Time                 : Wed Nov 27 2019 23:29:25 GMT+0000 (Greenwich Mean Time)
+2019-11-27T23:29:25: PM2 log: PM2 version          : 4.1.2
+2019-11-27T23:29:25: PM2 log: Node.js version      : 11.15.0
+2019-11-27T23:29:25: PM2 log: Current arch         : arm
+2019-11-27T23:29:25: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-27T23:29:25: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-27T23:29:25: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-27T23:29:25: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-27T23:29:25: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-27T23:29:25: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-27T23:29:25: PM2 log: Concurrent actions   : 2
+2019-11-27T23:29:25: PM2 log: SIGTERM timeout      : 1600
+2019-11-27T23:29:25: PM2 log: ===============================================================================
+2019-11-27T23:29:25: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-27T23:29:26: PM2 log: App [hello:0] online
+2019-11-27T23:39:21: PM2 log: ===============================================================================
+2019-11-27T23:39:21: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-27T23:39:21: PM2 log: Time                 : Wed Nov 27 2019 23:39:21 GMT+0000 (Greenwich Mean Time)
+2019-11-27T23:39:21: PM2 log: PM2 version          : 4.1.2
+2019-11-27T23:39:21: PM2 log: Node.js version      : 11.15.0
+2019-11-27T23:39:21: PM2 log: Current arch         : arm
+2019-11-27T23:39:21: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-27T23:39:21: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-27T23:39:21: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-27T23:39:21: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-27T23:39:21: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-27T23:39:21: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-27T23:39:21: PM2 log: Concurrent actions   : 2
+2019-11-27T23:39:21: PM2 log: SIGTERM timeout      : 1600
+2019-11-27T23:39:21: PM2 log: ===============================================================================
+2019-11-27T23:39:22: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-27T23:39:22: PM2 log: App [hello:0] online
+2019-11-28T02:54:00: PM2 log: Stopping app:hello id:0
+2019-11-28T02:54:00: PM2 log: App [hello:0] exited with code [0] via signal [SIGINT]
+2019-11-28T02:54:00: PM2 log: pid=432 msg=process killed
+2019-11-28T02:54:00: PM2 log: PM2 successfully stopped
+2019-11-28T02:54:46: PM2 log: ===============================================================================
+2019-11-28T02:54:46: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-28T02:54:46: PM2 log: Time                 : Thu Nov 28 2019 02:54:46 GMT+0000 (Greenwich Mean Time)
+2019-11-28T02:54:46: PM2 log: PM2 version          : 4.1.2
+2019-11-28T02:54:46: PM2 log: Node.js version      : 11.15.0
+2019-11-28T02:54:46: PM2 log: Current arch         : arm
+2019-11-28T02:54:46: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-28T02:54:46: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-28T02:54:46: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-28T02:54:46: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-28T02:54:46: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-28T02:54:46: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-28T02:54:46: PM2 log: Concurrent actions   : 2
+2019-11-28T02:54:46: PM2 log: SIGTERM timeout      : 1600
+2019-11-28T02:54:46: PM2 log: ===============================================================================
+2019-11-28T02:54:47: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-29T00:18:01: PM2 log: App [hello:0] online
+2019-11-29T00:47:54: PM2 log: ===============================================================================
+2019-11-29T01:04:04: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-29T01:04:04: PM2 log: Time                 : Fri Nov 29 2019 01:04:04 GMT+0000 (Greenwich Mean Time)
+2019-11-29T01:04:04: PM2 log: PM2 version          : 4.1.2
+2019-11-29T01:04:04: PM2 log: Node.js version      : 11.15.0
+2019-11-29T01:04:04: PM2 log: Current arch         : arm
+2019-11-29T01:04:04: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-29T01:04:04: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-29T01:04:04: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-29T01:04:04: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-29T01:04:04: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-29T01:04:04: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-29T01:04:04: PM2 log: Concurrent actions   : 2
+2019-11-29T01:04:04: PM2 log: SIGTERM timeout      : 1600
+2019-11-29T01:04:04: PM2 log: ===============================================================================
+2019-11-29T01:04:05: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-29T01:04:05: PM2 log: App [hello:0] online
+2019-11-29T01:04:05: PM2 error: Error: spawn node ENOENT
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:247:19)
+    at onErrorNT (internal/child_process.js:429:16)
+    at processTicksAndRejections (internal/process/task_queues.js:81:17)
+2019-11-29T01:04:05: PM2 error: Cancelling versioning data parsing
+2019-11-29T01:10:53: PM2 log: ===============================================================================
+2019-11-29T01:10:53: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-29T01:10:53: PM2 log: Time                 : Fri Nov 29 2019 01:10:53 GMT+0000 (Greenwich Mean Time)
+2019-11-29T01:10:53: PM2 log: PM2 version          : 4.1.2
+2019-11-29T01:10:53: PM2 log: Node.js version      : 11.15.0
+2019-11-29T01:10:53: PM2 log: Current arch         : arm
+2019-11-29T01:10:53: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-29T01:10:53: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-29T01:10:53: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-29T01:10:53: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-29T01:10:53: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-29T01:10:53: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-29T01:10:53: PM2 log: Concurrent actions   : 2
+2019-11-29T01:10:53: PM2 log: SIGTERM timeout      : 1600
+2019-11-29T01:10:53: PM2 log: ===============================================================================
+2019-11-29T01:10:53: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-29T01:10:54: PM2 log: App [hello:0] online
+2019-11-29T01:10:54: PM2 error: Error: spawn node ENOENT
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:247:19)
+    at onErrorNT (internal/child_process.js:429:16)
+    at processTicksAndRejections (internal/process/task_queues.js:81:17)
+2019-11-29T01:10:54: PM2 error: Cancelling versioning data parsing
+2019-11-29T01:12:57: PM2 log: ===============================================================================
+2019-11-29T01:12:57: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-29T01:12:57: PM2 log: Time                 : Fri Nov 29 2019 01:12:57 GMT+0000 (Greenwich Mean Time)
+2019-11-29T01:12:57: PM2 log: PM2 version          : 4.1.2
+2019-11-29T01:12:57: PM2 log: Node.js version      : 11.15.0
+2019-11-29T01:12:57: PM2 log: Current arch         : arm
+2019-11-29T01:12:57: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-29T01:12:57: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-29T01:12:57: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-29T01:12:57: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-29T01:12:57: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-29T01:12:57: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-29T01:12:57: PM2 log: Concurrent actions   : 2
+2019-11-29T01:12:57: PM2 log: SIGTERM timeout      : 1600
+2019-11-29T01:12:57: PM2 log: ===============================================================================
+2019-11-29T01:12:57: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-29T01:12:58: PM2 log: App [hello:0] online
+2019-11-29T01:12:58: PM2 error: Error: spawn node ENOENT
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:247:19)
+    at onErrorNT (internal/child_process.js:429:16)
+    at processTicksAndRejections (internal/process/task_queues.js:81:17)
+2019-11-29T01:12:58: PM2 error: Cancelling versioning data parsing
+2019-11-29T04:15:22: PM2 log: ===============================================================================
+2019-11-29T04:15:22: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-29T04:15:22: PM2 log: Time                 : Fri Nov 29 2019 04:15:22 GMT+0000 (Greenwich Mean Time)
+2019-11-29T04:15:22: PM2 log: PM2 version          : 4.1.2
+2019-11-29T04:15:22: PM2 log: Node.js version      : 11.15.0
+2019-11-29T04:15:22: PM2 log: Current arch         : arm
+2019-11-29T04:15:22: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-29T04:15:22: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-29T04:15:22: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-29T04:15:22: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-29T04:15:22: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-29T04:15:22: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-29T04:15:22: PM2 log: Concurrent actions   : 2
+2019-11-29T04:15:22: PM2 log: SIGTERM timeout      : 1600
+2019-11-29T04:15:22: PM2 log: ===============================================================================
+2019-11-29T04:15:23: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-29T04:15:24: PM2 log: App [hello:0] online
+2019-11-29T04:15:24: PM2 error: Error: spawn node ENOENT
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:247:19)
+    at onErrorNT (internal/child_process.js:429:16)
+    at processTicksAndRejections (internal/process/task_queues.js:81:17)
+2019-11-29T04:15:24: PM2 error: Cancelling versioning data parsing
+2019-11-29T18:22:28: PM2 log: ===============================================================================
+2019-11-29T18:22:29: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2019-11-29T18:22:29: PM2 log: Time                 : Fri Nov 29 2019 18:22:29 GMT+0000 (Greenwich Mean Time)
+2019-11-29T18:22:29: PM2 log: PM2 version          : 4.1.2
+2019-11-29T18:22:29: PM2 log: Node.js version      : 11.15.0
+2019-11-29T18:22:29: PM2 log: Current arch         : arm
+2019-11-29T18:22:29: PM2 log: PM2 home             : /home/pi/.pm2
+2019-11-29T18:22:29: PM2 log: PM2 PID file         : /home/pi/.pm2/pm2.pid
+2019-11-29T18:22:29: PM2 log: RPC socket file      : /home/pi/.pm2/rpc.sock
+2019-11-29T18:22:29: PM2 log: BUS socket file      : /home/pi/.pm2/pub.sock
+2019-11-29T18:22:29: PM2 log: Application log path : /home/pi/.pm2/logs
+2019-11-29T18:22:29: PM2 log: Process dump file    : /home/pi/.pm2/dump.pm2
+2019-11-29T18:22:29: PM2 log: Concurrent actions   : 2
+2019-11-29T18:22:29: PM2 log: SIGTERM timeout      : 1600
+2019-11-29T18:22:29: PM2 log: ===============================================================================
+2019-11-29T18:22:30: PM2 log: App [hello:0] starting in -fork mode-
+2019-11-29T18:22:30: PM2 log: App [hello:0] online
+2019-11-29T18:22:31: PM2 error: Error: spawn node ENOENT
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:247:19)
+    at onErrorNT (internal/child_process.js:429:16)
+    at processTicksAndRejections (internal/process/task_queues.js:81:17)
+2019-11-29T18:22:31: PM2 error: Cancelling versioning data parsing
+2019-11-29T18:23:41: PM2 log: Stopping app:hello id:0
+2019-11-29T18:23:41: PM2 error: app=hello id=0 does not have a pid
