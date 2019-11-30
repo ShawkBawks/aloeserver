@@ -54,5 +54,6 @@ const  getLocation = function() {
 		});
 	}
 
-getLocation().then(res => {console.log(res)})
+let location = getLocation().then(res => {console.log(res)})
+console.log(location.latitude, "LATS BRUH")
 module.exports = app;
