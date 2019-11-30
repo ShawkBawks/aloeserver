@@ -3,7 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const getLocation = require('./routes/index');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const request = require('request');
@@ -55,6 +54,5 @@ const  getLocation = function() {
 		});
 	}
 
-
-console.log(getLocation('dataaaaaa'));
+getLocation().then(res => {console.log(res)})
 module.exports = app;

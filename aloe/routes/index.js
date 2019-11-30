@@ -5,4 +5,3 @@ require("dotenv").config();
  */
 
 
-module.exports = {getLocation };
