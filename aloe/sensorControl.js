@@ -1,6 +1,7 @@
 const Gpio = require('onoff').Gpio;
 const sensor = new Gpio(17, 'in', 'both');
 const pump = new Gpio(18, 'out');
+const key = process.env.ACCESS_KEY;
 
 let wet = true;
 let lastWater = Date.now();
@@ -10,11 +11,7 @@ const sensorControl = () => {
   sensor.watch((err, value) => {
     if (value === 1 && !wet){
       wet = true;
-  
-      
-     
-      
-      const key = process.env.ACCESS_KEY;
+
       const  getLocation = function() {
         return axios
         .get(
@@ -26,24 +23,13 @@ const sensorControl = () => {
         method: 'post',
         url: 'http://localhost:3001/api/sensor-history',
         data: {
-         moisture?: value,
+         moisture: value === 1 ? true : false,
          latitude: response.data.latitude,
          longitude: response.data.longitude
         }
       })
-           return data;
          });
        }
-
-
-
-
-
-
-
-
-
-
 
 
       //water
@@ -53,14 +39,24 @@ const sensorControl = () => {
     } 
     else if (value === 0 && wet) {
       wet = false;
-      //axios posot
-      axios({
+      const  getLocation = function() {
+        return axios
+        .get(
+          `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
+          )
+          .then(response => {
+            
+           axios({
         method: 'post',
         url: 'http://localhost:3001/api/sensor-history',
         data: {
-         moisture?: value
+         moisture: value === 1 ? true : false,
+         latitude: response.data.latitude,
+         longitude: response.data.longitude
         }
       })
+         });
+       }
       console.log(value,err)
       pump.writeSync(1)
     }
