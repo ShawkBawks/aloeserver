@@ -7,6 +7,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const request = require('request');
 const axios = require("axios");
+const sensorControl = require("./sensorControl")
 require("dotenv").config();
 var app = express();
 
