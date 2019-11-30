@@ -39,7 +39,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 const key = process.env.ACCESS_KEY;
-console.log(key);
 const  getLocation = function() {
  return axios
     .get(
@@ -55,5 +54,7 @@ const  getLocation = function() {
 	}
 
 let location = getLocation().then(res => {console.log(res)})
-console.log(location.latitude, "LATS BRUH")
+setTimeout(() => {
+  console.log(location.latitude, "LATS BRUH");
+}, 2000);
 module.exports = app;
