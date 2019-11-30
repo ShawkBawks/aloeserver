@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+const getLocation = require('./routes/index');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const request = require('request');
@@ -18,12 +18,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-import getLocation from './routes/index'
-console.log(getLocation);
 
 
 // catch 404 and forward to error handler

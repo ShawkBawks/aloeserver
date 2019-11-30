@@ -6,7 +6,7 @@ require("dotenv").config();
  */
 const key = process.env.ACCESS_KEY;
 console.log(key);
-export default function getLocation() {
+function getLocation() {
   axios
     .get(
       `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
@@ -20,4 +20,4 @@ export default function getLocation() {
 		});
 	}
 
-module.exports = router;
+module.exports = {router, getLocation };
