@@ -38,23 +38,23 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-const key = process.env.ACCESS_KEY;
-const  getLocation = function() {
- return axios
-    .get(
-      `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
-    )
-    .then(response => {
-      let data = {
-        latitude: response.data.latitude,
-        longitude: response.data.longitude
-      };
-      return data;
-		});
-	}
+// const key = process.env.ACCESS_KEY;
+// const  getLocation = function() {
+//  return axios
+//     .get(
+//       `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
+//     )
+//     .then(response => {
+//       let data = {
+//         latitude: response.data.latitude,
+//         longitude: response.data.longitude
+//       };
+//       return data;
+// 		});
+// 	}
 
-let location = getLocation().then(res => {console.log(res)})
-setTimeout(() => {
-  console.log(location.latitude, "LATS BRUH");
-}, 2000);
+// let latitude = getLocation().then(res => {console.log(res.la)})
+// setTimeout(() => {
+//   console.log(location.res.latitude, "LATS BRUH");
+// }, 2000);
 module.exports = app;

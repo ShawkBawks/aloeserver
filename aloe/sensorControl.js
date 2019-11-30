@@ -10,15 +10,40 @@ const sensorControl = () => {
   sensor.watch((err, value) => {
     if (value === 1 && !wet){
       wet = true;
-      // axios post too tell the server plant is dfy
+  
       
-     axios({
-       method: 'post',
-       url: 'http://localhost:3001/api/sensor-history',
-       data: {
-        moisture?: value
+     
+      
+      const key = process.env.ACCESS_KEY;
+      const  getLocation = function() {
+        return axios
+        .get(
+          `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
+          )
+          .then(response => {
+            
+           axios({
+        method: 'post',
+        url: 'http://localhost:3001/api/sensor-history',
+        data: {
+         moisture?: value,
+         latitude: response.data.latitude,
+         longitude: response.data.longitude
+        }
+      })
+           return data;
+         });
        }
-     })
+
+
+
+
+
+
+
+
+
+
 
 
       //water
