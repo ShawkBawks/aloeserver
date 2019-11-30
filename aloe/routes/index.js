@@ -1,13 +1,12 @@
 var express = require("express");
-var router = express.Router();
 const axios = require("axios");
 require("dotenv").config();
 /* GET home page. *
  */
 const key = process.env.ACCESS_KEY;
 console.log(key);
-function getLocation() {
-  axios
+const  getLocation = function() {
+ return axios
     .get(
       `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
     )
@@ -20,4 +19,4 @@ function getLocation() {
 		});
 	}
 
-module.exports = {router, getLocation };
+module.exports = {getLocation };
