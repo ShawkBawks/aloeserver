@@ -45,17 +45,14 @@ const  getLocation = function() {
     .get(
       `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
     )
-    .then(function (response){
-      console.log('first then:')
-      axios({
-        method: 'post',
-        url: 'http://localhost:3001/api/sensor-history',
-        data: {
-          longitude: response.data.longitude,
-          latitude: response.data.latitude
-        }
-      })
-    })};
+    .then(response => {
+      let data = {
+        latitude: response.data.latitude,
+        longitude: response.data.longitude
+      };
+      return data;
+		});
+	}
 
 let location = getLocation().then(res => {console.log(res)})
 console.log(location.latitude, "LATS BRUH")
