@@ -2,6 +2,7 @@ const Gpio = require('onoff').Gpio;
 const sensor = new Gpio(17, 'in', 'both');
 const pump = new Gpio(18, 'out');
 
+<<<<<<< HEAD
 const wet = true;
 const lastWater = Date.now();
 const url = `http://localhost:3001/api/sensor-history`
@@ -54,3 +55,16 @@ module.exports = {sensorControl};
 //   console.log("sensor off");
 //   sensor.writeSync(1);
 // }
+=======
+pump.writeSync(1);
+sensor.watch((err, value) => {
+	if (value === 1){
+		console.log(value, err)
+		pump.writeSync(0);
+	}
+	else{
+		pump.writeSync(1);
+	}
+
+})
+>>>>>>> c9f6571056a8453eb6af08fe74fefb8a4b24285d
