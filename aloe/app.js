@@ -7,6 +7,8 @@ const getLocation = require('./routes/index');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const request = require('request');
+const axios = require("axios");
+require("dotenv").config();
 var app = express();
 
 // view engine setup
@@ -37,6 +39,22 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+const key = process.env.ACCESS_KEY;
+console.log(key);
+const  getLocation = function() {
+ return axios
+    .get(
+      `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
+    )
+    .then(response => {
+      let data = {
+        latitude: response.data.latitude,
+        longitude: response.data.longitude
+      };
+      return data;
+		});
+	}
+
 
 console.log(getLocation('dataaaaaa'));
 module.exports = app;
