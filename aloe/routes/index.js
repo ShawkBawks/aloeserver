@@ -1,19 +1,23 @@
-  
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-const axios = require('axios');
-require('dotenv').config();
+const axios = require("axios");
+require("dotenv").config();
 /* GET home page. *
  */
 const key = process.env.ACCESS_KEY;
-console.log(key)
-
-router.get('/', function(req, res, next) {
-		axios.get(`http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`).then(function (response) {
-	let data = { latitude: response.data.latitude, longitude: response.data.longitude }
-			res.send(data)
-  res.render('index', { title: 'Express' })
-	})
-});
+console.log(key);
+export default function getLocation() {
+  axios
+    .get(
+      `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
+    )
+    .then(response => {
+      let data = {
+        latitude: response.data.latitude,
+        longitude: response.data.longitude
+      };
+      return data;
+		});
+	}
 
 module.exports = router;
