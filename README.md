@@ -53,7 +53,7 @@ In order to set up the code, ssh into the Raspberry Pi and enter the following
 
 Once that has been set up you can enable ‘pm2’ to ensure that if your Raspberry Pi every resets/restarts it will automatically run your server. This way your plants will not have to go without watering just because the Raspberry Pi restarted abruptly.
 - Enter ‘pm2 startup’ and copy and paste the lines it gives you back in to the terminal
-- Next enter ‘pm2 start sensorControl.js’
+- Next enter ‘pm2 start app.js’
 - And finally ‘pm2 save’
 
 You should now have a server that will stay up and running provided you have power to your Raspberry Pi!
