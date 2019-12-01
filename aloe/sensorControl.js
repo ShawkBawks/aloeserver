@@ -6,7 +6,7 @@ const key = process.env.ACCESS_KEY;
 let wet = true;
 let lastWater = Date.now();
 
-export default function sensorControl()  {
+const sensorControl = () => {
   pump.writeSync(1);
   sensor.watch((err, value) => {
     if (value === 1 && !wet) {
@@ -68,4 +68,4 @@ export default function sensorControl()  {
 
 sensorControl();
 
-// module.exports = { sensorControl };
+module.exports = { sensorControl };
