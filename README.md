@@ -1,7 +1,7 @@
-# aloeserver
-## Raspberry Pi Installs
+# Plantastic Raspberry Pi Server
 
-## Node, npm, pm2, git, vim, express, express generator, axios, dotenv, ipstack, jade, Morgan, onoff, request
+## Raspberry Pi Installs
+Node, npm, pm2, git, vim, express, express generator, axios, dotenv, ipstack, jade, Morgan, onoff, request
 
 
 ## Headless Set Up
