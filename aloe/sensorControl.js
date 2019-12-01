@@ -19,13 +19,14 @@ const sensorControl = () => {
           )
           .then(response => {
             
-           axios({
+           return axios({
         method: 'post',
         url: 'http://localhost:3001/api/sensor-history',
         data: {
          moisture: value === 1 ? true : false,
          latitude: response.data.latitude,
-         longitude: response.data.longitude
+         longitude: response.data.longitude,
+         sensor_id: 1
         }
       })
          });
@@ -46,13 +47,14 @@ const sensorControl = () => {
           )
           .then(response => {
             
-           axios({
+           return axios({
         method: 'post',
-        url: 'http://localhost:3001/api/sensor-history',
+        url: 'http://localhost:3001/api/sensor-history-new',
         data: {
          moisture: value === 1 ? true : false,
          latitude: response.data.latitude,
-         longitude: response.data.longitude
+         longitude: response.data.longitude,
+         sensor_id: 1
         }
       })
          });
