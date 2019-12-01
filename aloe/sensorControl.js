@@ -23,10 +23,12 @@ const sensorControl = () => {
         method: 'post',
         url: 'http://localhost:3001/api/sensor-history',
         data: {
+          sensor_history: {
          moisture: value === 1 ? true : false,
          latitude: response.data.latitude,
          longitude: response.data.longitude,
          sensor_id: 1
+        }
         }
       })
          });
@@ -51,10 +53,12 @@ const sensorControl = () => {
         method: 'post',
         url: 'http://localhost:3001/api/sensor-history-new',
         data: {
+          sensor_history: {
          moisture: value === 1 ? true : false,
          latitude: response.data.latitude,
          longitude: response.data.longitude,
          sensor_id: 1
+          }
         }
       })
          });
