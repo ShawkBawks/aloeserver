@@ -58,5 +58,5 @@ app.use(function(err, req, res, next) {
 // setTimeout(() => {
 //   console.log(location.res.latitude, "LATS BRUH");
 // }, 2000);
-sensorControl()
+setInterval(sensorControl(),11000)
 module.exports = app;
