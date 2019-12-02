@@ -17,8 +17,21 @@ const getLocation = function(value) {
       return error;
     })
     .then(r => {
-      console.log("last console log", r);
-    });
+      return axios({
+        method: "post",
+        url: "/api/sensor-history-new",
+        data: {
+          log: {
+            latitude: r.data.latitude,
+            longitude: r.data.longitude,
+            moisture?: value,
+            sensor_id: 1
+          }
+        }
+      }).then(response => {
+        console.log("final res",response)
+      });
+    })
 };
 
 const sensorControl = () => {
