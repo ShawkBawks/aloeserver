@@ -13,12 +13,13 @@ const sensorControl = () => {
       wet = true;
 
       const getLocation = function() {
+        console.log("getLocation called")
         return axios
           .get(
             `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
           )
           .then(response => {
-            console.log(response);
+            console.log("After axios Location get, it responds with (before axios post):", response)
             return axios({
               method: "post",
               url: "http://localhost:3001/api/sensor-history-new",
