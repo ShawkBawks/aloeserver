@@ -2,6 +2,7 @@ const Gpio = require("onoff").Gpio;
 const sensor = new Gpio(17, "in", "both");
 const pump = new Gpio(18, "out");
 const key = process.env.ACCESS_KEY;
+const axios = require('axios');
 
 let wet = true;
 let lastWater = Date.now();
