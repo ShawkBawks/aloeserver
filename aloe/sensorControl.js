@@ -30,7 +30,9 @@ const getLocation = function(value) {
           }
         }
       });
-    }).catch(error);
+    }).catch(error => {
+      return error;
+    });
 };
 
 const sensorControl = () => {
