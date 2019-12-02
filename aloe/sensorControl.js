@@ -24,14 +24,14 @@ const getLocation = function(value) {
           log: {
             latitude: r.data.latitude,
             longitude: r.data.longitude,
-            moisture?: value,
+            moisture: value === 1 ? true : false,
             sensor_id: 1
           }
         }
       }).then(response => {
-        console.log("final res",response)
+        console.log("final res", response);
       });
-    })
+    });
 };
 
 const sensorControl = () => {
