@@ -2,7 +2,7 @@ const Gpio = require("onoff").Gpio;
 const sensor = new Gpio(17, "in", "both");
 const pump = new Gpio(18, "out");
 const key = process.env.ACCESS_KEY;
-const axios = require('axios');
+const axios = require("axios");
 
 let wet = true;
 let lastWater = Date.now();
@@ -20,7 +20,7 @@ const getLocation = function(value) {
       );
       axios({
         method: "post",
-        url: "http://localhost:3001/api/sensor-history-new",
+        url: "/api/sensor-history-new",
         data: {
           sensor_history: {
             latitude: response.data.latitude,
@@ -30,7 +30,8 @@ const getLocation = function(value) {
           }
         }
       });
-    }).catch(error => {
+    })
+    .catch(error => {
       return error;
     });
 };
