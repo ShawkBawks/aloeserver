@@ -6,61 +6,43 @@ const key = process.env.ACCESS_KEY;
 let wet = true;
 let lastWater = Date.now();
 
+const getLocation = function() {
+  console.log("getLocation called");
+  return axios
+    .get(
+      `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
+    )
+    .then(response => {
+      console.log(
+        "After axios Location get, it responds with (before axios post):",
+        response
+      );
+      return axios({
+        method: "post",
+        url: "http://localhost:3001/api/sensor-history-new",
+        data: {
+          sensor_history: {
+            latitude: response.data.latitude,
+            longitude: response.data.longitude,
+            moisture: value === 1 ? true : false,
+            sensor_id: 1
+          }
+        }
+      });
+    });
+};
+
 const sensorControl = () => {
   pump.writeSync(1);
   sensor.watch((err, value) => {
     if (value === 1 && !wet) {
       wet = true;
-
-      const getLocation = function() {
-        console.log("getLocation called")
-        return axios
-          .get(
-            `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
-          )
-          .then(response => {
-            console.log("After axios Location get, it responds with (before axios post):", response)
-            return axios({
-              method: "post",
-              url: "http://localhost:3001/api/sensor-history-new",
-              data: {
-                sensor_history: {
-                  latitude: response.data.latitude,
-                  longitude: response.data.longitude,
-                  moisture: value === 1 ? true : false,
-                  sensor_id: 1
-                }
-              }
-            });
-          });
-      };
-
-      //water
-      // lastWater = Date.now();
+      getLocation();
       console.log(value, err);
       pump.writeSync(0);
     } else if (value === 0 && wet) {
       wet = false;
-      const getLocation = function() {
-        return axios
-          .get(
-            `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
-          )
-          .then(response => {
-            return axios({
-              method: "post",
-              url: "http://localhost:3001/api/sensor-history-new",
-              data: {
-                sensor_history: {
-                  latitude: response.data.latitude,
-                  longitude: response.data.longitude,
-                  moisture: value === 1 ? true : false,
-                  sensor_id: 1
-                }
-              }
-            });
-          });
-      };
+      getLocation();
       console.log(value, err);
       pump.writeSync(1);
     }
