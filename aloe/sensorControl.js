@@ -24,15 +24,16 @@ const getLocation = function(value) {
           sensor_log: {
             latitude: r.data.latitude,
             longitude: r.data.longitude,
-            'moisture?': value === 1 ? 'true' : 'false',
+            "moisture?": value === 1 ? "true" : "false",
             sensor_id: 1
           }
         }
       }).then(response => {
         console.log("final res", response);
       });
-    }).catch(error => {
-      console.log(error.message)
+    })
+    .catch(error => {
+      console.log(error.message);
     });
 };
 
