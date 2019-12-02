@@ -20,7 +20,7 @@ const getLocation = function(value) {
       );
       axios({
         method: "post",
-        url: "localhost:3001/api/sensor-history-new",
+        url: "http://localhost:3001/api/sensor-history-new",
         data: {
           sensor_history: {
             latitude: response.data.latitude,
@@ -29,6 +29,8 @@ const getLocation = function(value) {
             sensor_id: 1
           }
         }
+      }).then(r => {
+        console.log(r)
       });
     })
     .catch(error => {
