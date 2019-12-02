@@ -14,7 +14,7 @@ const getLocation = function(value) {
       `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
     )
     .catch(error => {
-      return error;
+      console.log(error.message);
     })
     .then(r => {
       return axios({
@@ -31,6 +31,8 @@ const getLocation = function(value) {
       }).then(response => {
         console.log("final res", response);
       });
+    }).catch(error => {
+      console.log(error.message)
     });
 };
 
