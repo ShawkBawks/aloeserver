@@ -19,7 +19,7 @@ const getLocation = function(value) {
     .then(r => {
       return axios({
         method: "post",
-        url: "http://localhost:3001/api/sensor-history-new",
+        url: "http://192.168.88.123:3001/api/sensor-history-new",
         data: {
           log: {
             latitude: r.data.latitude,
