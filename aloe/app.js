@@ -60,6 +60,10 @@ app.use(function(err, req, res, next) {
 // }, 2000);
 // sensorControl();
 console.log("Before setInterval")
-setInterval(sensorControl, 10000);
+// setInterval(sensorControl, 10000);
+setInterval(function() {
+  sensorControl()
+  console.log("sensorControl ran from inside setInterval.")
+}, 10000);
 
 module.exports = app;
