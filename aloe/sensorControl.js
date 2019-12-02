@@ -23,7 +23,7 @@ const getLocation = function(value) {
       // );
       axios({
         method: "post",
-        url: "http://192.168.88.255:3001/api/sensor-history-new",
+        url: "http://192.168.88.123:3001/api/sensor-history-new",
         data: {
           sensor_history: {
             latitude: response.data.latitude,
