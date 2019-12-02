@@ -21,7 +21,7 @@ const getLocation = function(value) {
         method: "post",
         url: "http://192.168.88.123:3001/api/sensor-history-new",
         data: {
-          log: {
+          sensor_log: {
             latitude: r.data.latitude,
             longitude: r.data.longitude,
             moisture: value === 1 ? true : false,
