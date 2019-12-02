@@ -13,14 +13,17 @@ const getLocation = function(value) {
     .get(
       `http://api.ipstack.com/check?access_key=${key}&fields=latitude,longitude`
     )
+    .catch(error => {
+      return error;
+    })
     .then(response => {
-      console.log(
-        "After axios Location get, it responds with (before axios post):",
-        response
-      );
+      // console.log(
+      //   "After axios Location get, it responds with (before axios post):",
+      //   response
+      // );
       axios({
         method: "post",
-        url: "http://192.168.88.123:3001/api/sensor-history-new",
+        url: "http://192.168.88.255:3001/api/sensor-history-new",
         data: {
           sensor_history: {
             latitude: response.data.latitude,
@@ -30,12 +33,9 @@ const getLocation = function(value) {
           }
         }
       }).then(r => {
-        console.log(r)
+        console.log('last console log',r)
       });
     })
-    .catch(error => {
-      return error;
-    });
 };
 
 const sensorControl = () => {
