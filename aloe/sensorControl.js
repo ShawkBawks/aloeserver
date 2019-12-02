@@ -18,7 +18,7 @@ const getLocation = function(value) {
         "After axios Location get, it responds with (before axios post):",
         response
       );
-      return axios({
+      axios({
         method: "post",
         url: "http://localhost:3001/api/sensor-history-new",
         data: {
