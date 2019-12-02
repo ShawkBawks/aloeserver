@@ -16,26 +16,9 @@ const getLocation = function(value) {
     .catch(error => {
       return error;
     })
-    .then(response => {
-      // console.log(
-      //   "After axios Location get, it responds with (before axios post):",
-      //   response
-      // );
-      axios({
-        method: "post",
-        url: "http://192.168.88.255:3001/api/sensor-history-new",
-        data: {
-          sensor_history: {
-            latitude: response.data.latitude,
-            longitude: response.data.longitude,
-            moisture: value === 1 ? true : false,
-            sensor_id: 1
-          }
-        }
-      }).then(r => {
-        console.log('last console log',r)
-      });
-    })
+    .then(r => {
+      console.log("last console log", r);
+    });
 };
 
 const sensorControl = () => {
