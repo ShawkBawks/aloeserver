@@ -7,7 +7,7 @@ const axios = require('axios');
 let wet = true;
 let lastWater = Date.now();
 
-const getLocation = function() {
+const getLocation = function(value) {
   console.log("getLocation called");
   return axios
     .get(
@@ -38,12 +38,12 @@ const sensorControl = () => {
   sensor.watch((err, value) => {
     if (value === 1 && !wet) {
       wet = true;
-      getLocation();
+      getLocation(value);
       console.log(value, err);
       pump.writeSync(0);
     } else if (value === 0 && wet) {
       wet = false;
-      getLocation();
+      getLocation(value);
       console.log(value, err);
       pump.writeSync(1);
     }
