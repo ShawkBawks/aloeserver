@@ -25,7 +25,7 @@ const getLocation = function(value) {
             latitude: r.data.latitude,
             longitude: r.data.longitude,
             moisture: value === 1 ? "true" : "false",
-            sensor_id: 1
+            sensor_id: 1,
           }
         }
       }).then(response => {
